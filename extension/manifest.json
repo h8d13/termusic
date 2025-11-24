@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Video Blocker",
+  "version": "1.0",
+  "description": "Simple toggle to stop YouTube videos from playing/loading",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "youtube-blocker@local"
+    }
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "clipboardWrite",
+    "nativeMessaging",
+    "*://*.youtube.com/*"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}

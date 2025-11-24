@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 200px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+    }
+    h3 {
+      margin: 0 0 15px 0;
+      font-size: 14px;
+    }
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 24px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    #status {
+      font-size: 12px;
+      margin-top: 10px;
+      color: #666;
+    }
+    .copy-btn {
+      margin-top: 15px;
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      width: 100%;
+    }
+    .copy-btn:hover {
+      background-color: #45a049;
+    }
+    .copy-btn:active {
+      background-color: #3d8b40;
+    }
+    .copy-btn.copied {
+      background-color: #2196F3;
+    }
+    .mpv-btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #FF9800;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      width: 100%;
+    }
+    .mpv-btn:hover {
+      background-color: #F57C00;
+    }
+    .mpv-btn:active {
+      background-color: #E65100;
+    }
+    .mpv-btn.playing {
+      background-color: #4CAF50;
+    }
+    .mpv-close-btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      width: 100%;
+    }
+    .mpv-close-btn:hover {
+      background-color: #d32f2f;
+    }
+    .mpv-close-btn:active {
+      background-color: #c62828;
+    }
+    .mpv-close-btn.playing {
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>YouTube Blocker</h3>
+    <div class="toggle-container">
+      <span>Block Videos</span>
+      <label class="switch">
+        <input type="checkbox" id="blockToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div id="status"></div>
+    <button class="copy-btn" id="copyUrlBtn">Copy Video URL</button>
+    <div class="toggle-container" style="margin-top: 15px;">
+      <span>Audio</span>
+      <label class="switch">
+        <input type="checkbox" id="modeToggle">
+        <span class="slider"></span>
+      </label>
+      <span>Video</span>
+    </div>
+    <button class="mpv-btn" id="mpvSendBtn">Send to mpv</button>
+    <button class="mpv-close-btn" id="mpvCloseBtn">Send & Close Firefox</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "mpv_bridge",
+  "description": "Bridge to send YouTube URLs to mpv",
+  "path": "/home/user/termtube/mpv_bridge.py",
+  "type": "stdio",
+  "allowed_extensions": [
+    "youtube-blocker@local"
+  ]
+}
