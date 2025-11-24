@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "YouTube Video Blocker",
-  "version": "1.0",
+  "name": "TermTube",
+  "version": "0.0",
   "description": "Simple toggle to stop YouTube videos from playing/loading",
   "browser_specific_settings": {
     "gecko": {
