@@ -21,4 +21,6 @@ Adapt the `path` to TermTube in `mpv_bridge.json`
 ./install_bridge.sh
 ```
 
-Then load extension in Firefox from `about:debugging#/runtime/this-firefox`
+Then load extension in Firefox from:
+
+`about:debugging#/runtime/this-firefox`
