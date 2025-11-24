@@ -8,7 +8,7 @@ Playing with `--no-video` and `cava` visuals in MPV uses about 50mb RAM. Built-i
 
 ## Firefox Extension
 
-Simple YouTube auto-play locker extension with mpv integration. (Loads much faster without videos!)
+Simple YouTube auto-play locker extension with mpv integration. (Loads much faster without videos! Laos can't load ads hehe).
 
 **Features:**
 - Toggle to block/unblock YouTube videos
@@ -37,7 +37,7 @@ https://www.firefox.com/en-US/channel/desktop/
 
 Go to `about:config` then `xpinstall.signatures.required`
 
-Set to false. Drag the file in the repo into addons. 
+Set to `false`. Drag the `.zip` file in the repo into addons. 
 
 Enjoy <3
 
