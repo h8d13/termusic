@@ -51,6 +51,8 @@ Then in `extension/` run `web-ext build`
 
 ---
 
-![Preview](preview.png) ![Preview2](preview.png2)
+![Preview](preview.png) 
+
+![Preview2](preview2.png)
 
 
