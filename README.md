@@ -8,13 +8,7 @@ Playing with `--no-video` and `cava` visuals in MPV uses about 50mb RAM. Built-i
 
 ## Firefox Extension
 
-Simple YouTube auto-play locker extension with mpv integration. (Loads much faster without videos! Laos can't load ads hehe).
-
-**Features:**
-- Toggle to block/unblock YouTube videos
-- Copy current video URL
-- Send audio/video to mpv/terminal player
-- Send & close Firefox
+Simple YouTube auto-play locker extension with mpv integration. (Loads much faster without videos! Laos can't load ads hehe). ![Preview](preview.png) 
 
 **Install:**
 
@@ -55,8 +49,6 @@ You can also modify and build it from source yourself:
 Then in `extension/` run `web-ext build`
 
 ---
-
-![Preview](preview.png) 
 
 ![Preview2](preview2.png)
 
